@@ -642,6 +642,8 @@ footer{
   .icon-overlay:hover{
     opacity: 100%;
     transition: all 1s ease;
+    /* background-color: rgba(0, 0, 0, 0.115); */
+    /* backdrop-filter: blur 3px; */
   }
 
   /* .img1, .img3{
@@ -801,13 +803,15 @@ footer{
       gap: 5em;
       justify-content: right;
       margin-right: 5%;
-      transform: translateX(7em);
-      
+      transform: translateX(20em);
+      z-index: -100;
       
     }
     .top-nav:hover {
       background-color: transparent;
       color: var(--lightGreen);
+      
+      z-index: -100;
     }
 
     .main-nav{
@@ -822,7 +826,7 @@ footer{
     }
 
     .main-nav[data-visible="true"]{
-      transform: translateX(5em);
+      transform: translateX(-6em);
       transition: var(--transition);
     }
 
@@ -947,6 +951,12 @@ footer{
     align-self: center;
     margin-inline: .5rem;
     height: 10%;
+  }
+
+  .sendbtn{
+    background-color: var(--lightGreen);
+    color: var(--dark);
+    font-weight: 500;
   }
 
     
